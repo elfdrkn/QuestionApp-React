@@ -11,7 +11,10 @@ This project is a test application titled Question App. Users can answer various
 
 ## Live Demo 🌐
 
-You can try the live version of the application [here](https://your-live-link.vercel.app).
+You can try the live version of the application [here](https://question-app-react-seven.vercel.app/).
+
+## Technologies 💻
+React, JavaScript, CSS
 
 ## Installation 🛠️
 
@@ -20,7 +23,7 @@ To run the project on your local machine, follow these steps:
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/your_username/project-name.git
+   git clone https://github.com/elfdrkn/QuestionApp-React
 
 2. **Navigate to the project directory:**
 
