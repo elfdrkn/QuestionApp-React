@@ -13,6 +13,9 @@ This project is a test application titled Question App. Users can answer various
 
 You can try the live version of the application [here](https://question-app-react-seven.vercel.app/).
 
+## Technologies 💻
+React, JavaScript, CSS
+
 ## Installation 🛠️
 
 To run the project on your local machine, follow these steps:
