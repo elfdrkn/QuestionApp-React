@@ -6,14 +6,14 @@ export const questions = [
     media: "cin-seddi.jpg",
   },
   {
-    question: "İlk Pamuk şekeri bulan kişinin mesleği nedir?",
+    question: "İlk pamuk şekeri bulan kişinin mesleği nedir?",
     options: ["Gıda Mühendisi", "Diş Doktoru", "Ev Hanımı", "Güzellik Uzmanı"],
     answer: "Diş Doktoru",
     media: "pamuk.jpg",
   },
   {
     question:
-      "Tarkan'ın 'Hüp' klibini izledikten sonra gaza gelip 'Tarkan keşke beni hüpletseydi' diye açıklamda bulunan kişi kimdir?",
+      "Tarkan'ın 'Hüp' klibini izledikten sonra gaza gelip 'Tarkan keşke beni hüpletseydi' diye açıklamada bulunan kişi kimdir?",
     options: ["Gülben Ergen", "Hülya Avşar", "Harika Avcı", "Sevtap Parman"],
     answer: "Gülben Ergen",
     media: "tarkan.jpg",

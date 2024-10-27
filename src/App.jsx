@@ -10,6 +10,7 @@ function App() {
   const [isTestFinished, setIsTestFinished] = useState(false);
   const [userAnswers, setUserAnswers] = useState([]);
   const [correctAnswers, setCorrectAnswers] = useState(0);
+  const [currentQuestion, setCurrentQuestion] = useState(0);
 
   const handleStartTest = () => {
     setIsTestStarted(true); // Starts the test when the button is pressed
@@ -22,6 +23,14 @@ function App() {
     }
 };
 
+  const handleNextQuestion = () => {
+    if (currentQuestion < questions.length -1) {
+      setCurrentQuestion((prev) => prev + 1);
+    } else {
+      handleFinishTest();
+    }
+  };
+
   const handleFinishTest = () => {
     setIsTestFinished(true);
 };
@@ -31,7 +40,7 @@ function App() {
       {!isTestStarted ? (
         <div>
           <h1>Teste Hoş Geldiniz!</h1>
-          <p>Sizi 10 soruluk bir test bekliyor. Başlamak için 'Teste Başla' butonuna tıklayın.Unutmayın, her soru için yalnızca 30 saniyeniz var! ⏳</p>
+          <p>Sizi 10 soruluk bir test bekliyor. Başlamak için 'Teste Başla' butonuna tıklayın.<br></br>Unutmayın, 4 saniye içinde şıklar gelir ve her soru için yalnızca 30 saniyeniz var! ⏳</p>
           <button id="start" onClick={handleStartTest}>Teste Başla</button>
         </div>
       ) : isTestFinished ? (
@@ -42,7 +51,11 @@ function App() {
           />
       ) : (
         <Question
-          onAnswerSelection={handleAnswerSelection} 
+          questionNumber={currentQuestion + 1}
+          totalQuestions={questions.length}
+          question={questions[currentQuestion]}
+          onAnswerSelection={handleAnswerSelection}
+          onNextQuestion={handleNextQuestion} 
           onFinishTest={handleFinishTest} 
           />
       )}
