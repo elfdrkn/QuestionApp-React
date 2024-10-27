@@ -11,7 +11,7 @@ This project is a test application titled Question App. Users can answer various
 
 ## Live Demo 🌐
 
-You can try the live version of the application [here](https://question-app-react-seven.vercel.app/).
+You can try the live version of the application [here](https://lambent-chaja-762b3a.netlify.app).
 
 ## Technologies 💻
 React, JavaScript, CSS
